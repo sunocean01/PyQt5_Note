@@ -471,7 +471,14 @@ class MyWindown(QWidget):
         self.dedwdg.setLayout(mlayout)
 
     def dte(self):
-        pass
+        mlayout = QVBoxLayout()
+        noteedit = QTextEdit()
+        noteedit.setStyleSheet("QTextEdit{font-size:24px}")
+        noteedit.setText("To Do")
+
+        mlayout.addWidget(noteedit)
+        self.dtewdg.setLayout(mlayout)
+
     def dal(self):
         pass
     def hvb(self):
